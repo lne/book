@@ -1,0 +1,39 @@
+// Place all the styles related to the codes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.field {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    height: 50px;
+    li {
+      float:left;
+      input {
+        width:60px;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+#result_button {
+  height: 23px;
+  li {
+    height: 0px;
+    label {
+      border: 1px solid gray;
+      border-radius: 2px / 2px;
+      cursor: pointer;
+      padding: 1px 8px;
+      background: -webkit-gradient(linear, left top, left bottom , from(#FFFFFF), to(#D3D3D3));
+      background: -moz-linear-gradient(top, #FFFFFF, #D3D3D3);
+    }
+  }
+}

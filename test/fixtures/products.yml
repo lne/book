@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  author: MyString
+  summary: MyText
+  published_at: 2012-10-02 15:10:18
+  price: 1
+  pages: 1
+  published_by: MyString
+  characters: 1
+  RAILS_ENV=production: MyString
+
+two:
+  name: MyString
+  author: MyString
+  summary: MyText
+  published_at: 2012-10-02 15:10:18
+  price: 1
+  pages: 1
+  published_by: MyString
+  characters: 1
+  RAILS_ENV=production: MyString

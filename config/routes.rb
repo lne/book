@@ -1,4 +1,21 @@
 Book::Application.routes.draw do
+  resources :codes do
+    collection do
+      post 'interpret'
+    end
+  end
+
+  resources :products
+
+  # ruby magic primary
+  resources :rmp
+
+  # ruby magic intermediate
+  resources :rmi
+
+  # ruby magic advanced
+  resources :rma
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  source: MyText
+  product_id: 1
+  number: 1
+  chapter: 1
+  section: 1
+
+two:
+  source: MyText
+  product_id: 1
+  number: 1
+  chapter: 1
+  section: 1

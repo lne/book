@@ -1,0 +1,61 @@
+<%= form_for(@code) do |f| %>
+  <% if @code.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@code.errors.count, "error") %> prohibited this code from being saved:</h2>
+
+      <ul>
+      <% @code.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :source %><br />
+    <%= f.text_area :source, :size => "80x10" %>
+  </div>
+  <div class="field">
+    <ul id="result_button">
+      <li>
+    <%= f.label :show_result, "show result", :onclick => "interpret('1.9.3');" %><br />
+      </li>
+      <li>
+    <%= f.label :hide_result, "hide result", :onclick => "hideResult();", :class => 'hidden' %><br />
+      </li>
+    </ul>
+    <%= f.text_area :result, :size => "80x10", :disabled => 'disabled', :class => 'hidden' %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :title, "Name" %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :keyword, "Keywords (eg: k1, k2, ...)" %><br />
+    <%= f.text_field :keyword %>
+  </div>
+  <div class="field">
+    <ul>
+      <li>
+    <%= f.label :book %><br />
+    <%= f.number_field :product_id, :value=> 1, :in => 1..2, :disabled => true %>
+      </li>
+      <li>
+    <%= f.label :chapter %><br />
+    <%= f.number_field :chapter, :in=> 1..20 %>
+      </li>
+      <li>
+    <%= f.label :section %><br />
+    <%= f.number_field :section, :in=> 1..20 %>
+      </li>
+      <li>
+    <%= f.label :number %><br />
+    <%= f.number_field :number, :in=> 1..99 %>
+      </li>
+    </ul>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

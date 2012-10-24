@@ -1,0 +1,36 @@
+// Place all the styles related to the rubybasic controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+div.main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+div.textarea {
+}
+
+div.book_img {
+  float: left;
+}
+
+div.book_inf {
+  padding-left: 150px;
+  text-align: left;
+  dt {
+    float: left;
+    margin: 0 0 0.8em;
+    width: 7.5em;
+    padding-left: 5px;
+  }
+  dd {
+    margin-left: 200px;
+    margin-bottom: 0.8em;
+  }
+}

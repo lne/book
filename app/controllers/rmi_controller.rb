@@ -1,0 +1,2 @@
+class RmiController < ApplicationController
+end

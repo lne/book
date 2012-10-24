@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @product.name %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @product.author %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @product.summary %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @product.published_at %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @product.price %>
+</p>
+
+<p>
+  <b>Pages:</b>
+  <%= @product.pages %>
+</p>
+
+<p>
+  <b>Published by:</b>
+  <%= @product.published_by %>
+</p>
+
+<p>
+  <b>Characters:</b>
+  <%= @product.characters %>
+</p>
+
+<p>
+  <b>Rails env=production:</b>
+  <%= @product.RAILS_ENV=production %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

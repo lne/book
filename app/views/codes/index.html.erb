@@ -1,0 +1,29 @@
+<h1>Listing codes</h1>
+
+<table>
+  <tr>
+    <th>Chapter</th>
+    <th>Section</th>
+    <th>Number</th>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @codes.each do |code| %>
+  <tr>
+    <td><%= code.chapter %></td>
+    <td><%= code.section %></td>
+    <td><%= code.number %></td>
+    <td><%= code.title[0..15] if code.title %></td>
+    <td><%= link_to 'Show', code %></td>
+    <td><%= link_to 'Edit', edit_code_path(code) %></td>
+    <td><%= link_to 'Destroy', code, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Code', new_code_path %>

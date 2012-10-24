@@ -1,0 +1,2 @@
+module RmpHelper
+end
